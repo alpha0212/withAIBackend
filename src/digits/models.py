@@ -25,7 +25,7 @@ class Digit(models.Model):
     def _str_(self):
         return str(self.id)
 
-    # 분류 및 결과를 가져오기 위해 저장방법을 재정의
+    # 분류 및 결과를 가져오기 위해 저장방법을 재정의d
     def save(self, *args, **kwargs):
         print(self.image)
         img = Image.open(self.image)
